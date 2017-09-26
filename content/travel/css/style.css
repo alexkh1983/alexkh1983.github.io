@@ -1,0 +1,238 @@
+/* Код для подключения шрифта в /css/stylename.css */
+/* font-family: "CenturyGothicRegular"; */
+@font-face {
+    font-family: "CenturyGothicRegular";
+    src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot");
+    src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CenturyGothicRegular/CenturyGothicRegular.woff") format("woff"),
+    url("../fonts/CenturyGothicRegular/CenturyGothicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../images/bg-head.jpg) center top no-repeat;
+	background-color: #EDECE8;
+}
+.main{
+	width: 970px; /*фиксированная ширина каркаса*/
+	margin: 0 auto; /*центрирование каркаса*/
+}
+.head {
+	overflow: hidden;
+}
+.head h2 {
+	color: #3f383f;
+	font: 24px "CenturyGothicRegular";
+	float: left;
+	margin-top: 10px;
+}
+.head a {
+	text-decoration: none;
+	color: #716b5b;
+	font: 26px "CenturyGothicRegular";
+	float: right;
+	margin: 20px 10px 0 0;
+	height: 220px;
+}
+.head a span {
+	color: #a73700;
+}
+.content-main{
+	background: #f7f7f7;
+	border: 1px solid #fff;
+	overflow: hidden;
+	margin-top: 45px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+}
+.menu {
+	list-style: none;
+	background: #3f282f;
+	overflow: hidden;
+	height: 45px;
+	border-radius: 15px 15px 0 0;
+	-moz-border-radius: 15px 15px 0 0;
+	-webkit-border-radius: 15px 15px 0 0;
+
+}
+.menu li{
+	float: left;
+	background: url(../images/menu-bg.jpg) left center no-repeat;
+	padding: 15px 35px;
+}
+.menu li a {
+	text-decoration: none; 
+	color: #f2f2f2;
+	font: 18px "CenturyGothicRegular";
+}
+
+.menu li a:hover {
+	text-decoration: underline; 
+}
+.search-main{
+	float: right;
+	margin: 0 25px 0 0;
+}
+.search-txt{
+	height: 23px;
+	width: 210px;
+	background: #f7f7f7;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin: 0 10px 8px 0;
+	vertical-align: middle;
+}
+.search-bth {
+	position: relative;
+	top: 7px;
+}
+.content{
+	width: 700px;
+	float: left;
+	margin: 0 0 0 20px;
+}
+.post-main{
+	background: #f5f5f5;
+	border: 1px solid #e7e2e3;
+	border-radius: 8px; 
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 0 0 20px 0;
+}
+.post-main h1{
+	font: 24px Verdana;
+	background: #e2e0e1;
+	border-radius: 8px 8px 0 0; 
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	padding:  5px 20px 8px 15px;
+	margin-bottom: 5px;
+}
+.post-main h1 a{
+	font: 24px normal Verdana;
+	color: #5e4e53;
+	background: #e2e0e1;
+	text-decoration: none;
+}
+.post-main h1 a:hover{
+	text-decoration: underline;
+}
+.post-main span{
+	font: 12px Verdana;
+	color: #c7bbbe;
+}
+.imgstyle{
+	float: left;
+	margin: 0 15px 15px 0;
+}
+.post{
+	margin: 0 15px 15px 15px;
+}
+.post p{
+	font: 12px Verdana;
+	color: #000000;
+	margin: 0 0 15px 0;
+}
+.post p a{
+	text-decoration: underline;
+	color: #7f7477;
+}
+.post p a:hover{
+	text-decoration: none;
+}
+.sidebar{
+	width: 207px;
+	float: right;
+	margin: 0 0 0 20px;
+}
+.viget{
+	background: #e7e2e3;
+	border: 1px solid #d7d3d4;
+	border-radius: 8px; 
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin: 0 20px 0 0;
+}
+.viget h2{
+	font: 18px "CenturyGothicRegular";
+	color: #ffffff;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	background: #3f282f;
+	border-radius: 8px 8px 0 0; 
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+}
+.viget ul{
+	list-style: none;
+}
+.viget ul li{
+	border-bottom: 1px solid #c8bbbd;
+	border-top: 1px solid #ffffff;
+	color: #7f7c7d;
+	font-family: "CenturyGothicRegular";
+	padding: 15px 10px 5px 10px;
+}
+.viget ul li:first-child{
+	border-top: none;
+}
+.viget ul li:last-child{
+	border-bottom: none;
+}
+.viget ul li a{
+	color: #7f7c7d;
+	font: 14px "CenturyGothicRegular";
+	text-decoration: underline;
+}	
+.viget ul li a:hover{
+	text-decoration: none;
+}	
+.footer{
+	overflow: hidden;
+	padding: 30px 25px 0 0;
+}
+.cpy{
+	float: left;
+}
+.menu-foot{
+	float: left;
+	margin: 0 80px 10px 140px;
+}
+.cpy a span {
+	color: #a73700;
+}
+.cpy a {
+	text-decoration: none;
+	color: #716b5b;
+	font: 24px "CenturyGothicRegular";
+	margin: 20px 10px 0 0;
+}
+.cpy p{
+	font: 14px Verdana;
+	color: #000;
+	margin: 10px 0 10px 0;
+
+}
+.menu-foot h2{
+	font: normal 24px "CenturyGothicRegular";
+	color: #3f282f;
+}
+.menu-foot ul{
+	list-style: none;	
+}
+.menu-foot ul li a{
+	text-decoration: none;
+	font: 14px "CenturyGothicRegular";
+	color: #000;
+}
+.menu-foot ul li a:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,259 @@
+/* Eric Meyer's CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, 
+a, img, ol, ul, li,
+article, aside, footer, header,
+menu, nav, {
+	border: 0; font-size: 100%;
+	font: inherit; vertical-align: baseline;
+	height: 100%;
+	font-size: inherit;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+body{
+	font: 18px 'Open Sans', sans-serif;
+	color: #EBEBED;
+	background-color: #0F86CA;
+	background-image: url(../images/background-photo.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+#wrapper {
+	min-width: 480px; max-width: 100%;
+	margin: 0 auto; 
+	width: 90%;
+	min-height: 100%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+	display: flex;
+	justify-content: space-between;
+	height: 145px;
+}
+.name{
+	width: 35%;
+	margin: 20px 0 0 0;
+}
+.description{
+	width: 272px;
+	margin: 68px 0 0 0;
+}
+h1{
+	font-size: 20px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+article {
+	padding: 50px 0;
+	height: 1%;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+
+}
+article h2{
+	font-size: 22px;
+	margin: 0 auto;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	width: 91%;
+	margin: 0 auto;
+}
+.row a{
+	margin: 35px 10px;
+	color: #EBEBED; 
+}
+article a img{
+	box-shadow: 0 0 20px rgba(255, 255, 255, .9);
+}
+article a:hover img{
+	box-shadow: 0 0 50px rgba(255, 255, 255, .9);
+	transition: all .5s;
+}
+article a p{
+	max-width: 205px;
+	margin-right: 0;
+}
+.myskills{
+	width: 90%;
+	margin: 30px auto 50px;
+}
+.myskills h2{
+	margin: 0 auto 35px;
+	text-align: center;
+}
+.skillbar{
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+	background: #EEEEEE;
+	height: 35px;
+	border-radius: 3px;
+	transition: 0.4s linear;
+	transition-property: width, background-color;
+}
+.skillbar-title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-weight: bold;
+	font-size: 13px;
+	color: #FFFFFF;
+	background: #6ADCFA;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+} 
+.skillbar-title span{
+	display: block;
+	background: rgba(0,0,0,0.1);
+	padding: 0 20px;
+	height: 35px;
+	line-height: 35px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.skillbar-bar{
+	height: 35px;
+	width: 0;
+	background: #6ADCFA;
+	border-radius: 3px;
+}
+.skillbar-bar-percent{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: ]11px;
+	height: 35px;
+	line-height: 35px;
+	color: #444444;
+	color: rgba(0,0,0,0.4);
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+	min-height: 510px;
+	background-color: #0F86CA;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	bottom: 0;
+	display: flex;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+
+}
+.fwrapper{
+	min-width: 480px; max-width: 100%;
+	margin: 0 auto;
+	width: 90%;
+	padding: 0 18px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.about_me{
+	display: flex;
+}
+.about_me .autor{
+	display: block;
+	margin: -46px 0 15px 0;
+	border: 15px solid #0F86CA;
+}
+.about_me p{
+	color: #EBEBED;
+	text-align: justify;
+}
+.about_me .contacts{
+	width: 230px;
+	overflow: hidden;
+	margin: 15px 0 0 25px;
+}
+.contacts li, a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #EBEBED;
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif, important!; 
+}
+.contacts a:hover{
+	text-decoration: none;
+	color: #EBEBED;
+}
+
+.resume{
+	margin-top: 19px;
+	overflow: hidden;
+}
+.resume p{
+	text-align: justify;
+}
+.up{
+	display: none;
+	background-image: url(../images/up.png);
+	background-repeat: no-repeat;
+	position: fixed;
+	opacity: 0.7;
+	width: 60px;
+	height: 40px;
+	bottom: 30px;
+	right: 22px;
+	cursor: pointer;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1126px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 817px) {
+ 
+ 
+}	
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+		
+}
