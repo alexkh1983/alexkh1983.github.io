@@ -35,7 +35,7 @@ body{
 	box-sizing: border-box;
 }
 #wrapper {
-	min-width: 480px; max-width: 100%;
+	min-width: 460px; max-width: 100%;
 	margin: 0 auto; 
 	width: 90%;
 	min-height: 100%;
@@ -68,7 +68,6 @@ article {
 	margin: 10px auto;
 	display: flex;
 	flex-direction: column;
-
 }
 article h2{
 	font-size: 22px;
@@ -78,15 +77,16 @@ img{
 	max-width: 100%;
 	height: auto;
 }
-.row{
+.grid-row{
 	display: flex;
 	justify-content: space-between;
 	width: 91%;
-	margin: 0 auto;
+	margin: 30px auto;
 }
-.row a{
-	margin: 35px 10px;
+.grid-item a{
 	color: #EBEBED; 
+	padding: 20px;
+	flex: 1;
 }
 article a img{
 	box-shadow: 0 0 20px rgba(255, 255, 255, .9);
@@ -98,6 +98,9 @@ article a:hover img{
 article a p{
 	max-width: 205px;
 	margin-right: 0;
+}
+.grid-sm{
+	display: none;
 }
 .myskills{
 	width: 90%;
@@ -230,30 +233,56 @@ footer {
 	cursor: pointer;
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1126px) {
-
-}
-
-/* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-
+	.grid{
+		display: block;
+	}
+	.grid-sm{
+		display: none;
+	}
 
 }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 817px) {
- 
- 
+@media only screen and (max-width : 920px) {
+	.grid{
+		display: none;
+	}
+	.grid-sm{
+		display: block;
+	}
+	.grid-row-sm{
+		display: flex;
+		justify-content: space-around;
+		width: 91%;
+		margin: 30px auto;
+	}
+	.grid-item-sm a{
+		padding: 10px;
+	}
+	.description{
+		width: 200px;
+		margin-top: 30px;
+	}
 }	
 
+@media only screen and (max-width : 580px) {
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-		
+	.grid-row-sm, .grid-sm{
+		display: none;
+	}
+	.grid, .grid-row{
+		display: flex;
+		flex-direction: column;
+	}	
+	.grid-row{
+		margin: 0 auto;
+	}
+	.grid-item{
+		margin: 15px auto;
+	}
+	.description{
+		width: 200px;
+		margin-top: 10px;
+	}
 }
