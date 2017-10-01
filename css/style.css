@@ -35,7 +35,7 @@ body{
 	box-sizing: border-box;
 }
 #wrapper {
-	min-width: 460px; max-width: 100%;
+	min-width: 300px; max-width: 100%;
 	margin: 0 auto; 
 	width: 90%;
 	min-height: 100%;
@@ -165,17 +165,11 @@ footer {
 	background-color: #0F86CA;
 	width: 100%;
 	margin: 0 auto;
-	position: relative;
 	bottom: 0;
-	display: flex;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	
-
+	display: flex;	
 }
 .fwrapper{
-	min-width: 480px; max-width: 100%;
+	min-width: 300px; max-width: 100%;
 	margin: 0 auto;
 	width: 90%;
 	padding: 0 18px;
@@ -183,7 +177,6 @@ footer {
 	display: flex;
 	flex-direction: column;
 }
-
 .about_me{
 	display: flex;
 }
@@ -212,7 +205,6 @@ footer {
 	text-decoration: none;
 	color: #EBEBED;
 }
-
 .resume{
 	margin-top: 19px;
 	overflow: hidden;
@@ -232,7 +224,6 @@ footer {
 	right: 22px;
 	cursor: pointer;
 }
-
 
 @media only screen and (max-width : 991px) {
 	.grid{

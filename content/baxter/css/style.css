@@ -265,7 +265,9 @@ ul{
 	width: 99px;
 	height: 26px;
 	border: none;
-	padding: 10px 0 0 0;
+	padding: 0;
+	margin-top: 5px;
+	cursor: pointer;
 }
 /*Конец черно-белого блока*/
 /*Начало темного блока*/
