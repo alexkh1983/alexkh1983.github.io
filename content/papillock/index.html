@@ -7,12 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/custom-functions2.min.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
 
 </head>
 <body>
 	<header id="header">
-		<div class="content">
+		<div class="header-content">
 			<div class="slogan">
 				<hr>
 				<p>замучили бородавки и папилломы?</p>
@@ -42,7 +42,7 @@
 							<span class="small-sum">798 грн.</span>
 						</div>
 					</div>
-					<a href="#footer" class="button"><p><span>заказать</span></p></a>
+					<a href="#footer" class="button button-down"><p><span>заказать</span></p></a>
 				</div>
 			</div>	
 		</div>
@@ -50,24 +50,25 @@
 
 	<section id="determ">
 		<div class="content">
-			<div class="determ-content"><h2>откуда они берутся?</h2>
+			<div class="determ-item1">
+				<h2>откуда они берутся?</h2>
 				<div>
 					<p><span>бородовка</span>-преимущественно доброкачественное новообразование кожи, зачастую вирусной этиологии, имеющее вид узелка или сосочка. Вызывается вирусом папилломы человека.</p>
 					<p><span>папилломавирус человека</span>-вирус из рода папилломавирусов, семейства паповавирусов. Передаётся только от человека к человеку и приводит к изменению характера роста тканей. Может долго находиться в "спящем" состоянии.</p>
 				</div>
 			</div>
-			<img src="img/virus.png">
+			<div class="determ-item2"><img src="img/virus.png"></div>
 		</div>			
 	</section>
 
 	<section id="examples">
 		<div class="content">
 			<h2>яркие примеры папиллом и бородавок</h2>
-			<div>
-				<div class="examples-item"><img src="img/block-gug1.png"><p class="first">Папилломы</p> <p class="first">на шее</p></div>
-				<div class="examples-item"><img src="img/block-gug2.png"><p>Папилломы в подмышечной области</p></div>
+			<div class="examples-content">
+				<div class="examples-item first"><img src="img/block-gug1.png"><p class="first">Папилломы</p> <p class="first">на шее</p></div>
+				<div class="examples-item second"><img src="img/block-gug2.png"><p>Папилломы в подмышечной области</p></div>
 				<div class="examples-item"><img src="img/block-gug3.png"><p>Бородавки</p> <p>на руках</p></div>
-				<div class="examples-item"><img src="img/block-gug4.png"><p>Бородавки</p> <p>на ногах</p></div>
+				<div class="examples-item four"><img src="img/block-gug4.png"><p>Бородавки</p> <p>на ногах</p></div>
 			</div>
 		</div>
 	</section>
@@ -82,7 +83,7 @@
 					<div class="tab1"><p><span>папиллома</span> - доброкачественная опухоль кожи или слизистой оболочки, выступающая под их поверхностью в виде сосочка</p></div>
 					<div class="tab2"><p><span>бородавка</span> - преимущественно доброкачественное новообразование кожи, зачастую вирусной этиологии, имеющее вид узелка или сосочка</p></div>
 				</div>
-				<div class="decision-item"><img src="img/img-table.png"></div>
+				<div class="decision-item-img"><img src="img/img-table.png"></div>
 				<div class="decision-item">
 					<div class="tab3"><p><span>мозоль</span> - это огрубевший участок кожи, выступающий над поверхностью, в центре которого находится корень (стержень)</p></div>
 					<div class="tab4"><p><span>шипица</span> - бородавки, вызванные вирусом папилломы человека (ВПЧ), которые появляются на подошве или пальцах ног</p></div>
@@ -95,7 +96,7 @@
 		<div class="content">
 			<h2>устранение неприятных образований на коже<br>
 			менее чем за неделю:</h2>
-			<div>
+			<div class="results-content">
 				<div class="results-item"><img src="img/1nedel-1tab.png"><p>Чистая кожа пальцев и кистей рук</p></div>
 				<div class="results-item"><img src="img/1nedel-2tab.png"><p>Бородавки и сухие мозоли исчезнуть без следа</p></div>
 				<div class="results-item"><img src="img/1nedel-3tab.png"><p>Кожа шеи часто подвержена папилломам. Вы забудете об этом!</p></div>
@@ -103,7 +104,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="booking">
 		<div class="content">
 			<div class="price booking-item1">
@@ -122,7 +123,7 @@
 				<div class="counter">
 					<script src="http://megatimer.ru/s/3a2c2ab2ddaf50024af08845c558413a.js"></script>
 				</div>
-				<a href="#footer" class="button"><p><span>заказать</span></p></a>
+				<a href="#footer" class="button button-down"><p><span>заказать</span></p></a>
 			</div>	
 		</div>
 	</section>
@@ -196,22 +197,19 @@
 				<p>Летом у меня выскочила бородавка на пятке - было очень неудобно и больно ходить. Я как раз отдыхал в деревне и возможности пойти и удалить ее не имел. Дочке кто-то посоветовал PAPILLOCK Plus и она мне его заказала. Через 4-5 дней после того, как начал применять Папиллок, то заметил, что бородавка стала уменьшаться и ссыхать. Еще через 4-5 дней от нее остался маленькое пятнышко, которое потом просто пропало! Вот так результат!<br><span>Александр, 58 лет</span></p>
 				<img src="img/foto-otz-two.png">
 			</div>
-			<div>
-
-				<div class="reviews2">
-					<img src="img/foto-otz-three.png">
-					<p>Несколько лет назад у меня незаметно начали появляться папилломы на веках и вокруг глаз. Скоро это превратилось в проблему, т.к. некоторые из них сильно увеличились и стали заметны. Знаю что не рекомендуется применять рядом с глазами, но я рискнула, очень аккуратно(( Помогло конечно.. После курса лечения кожа вокруг глаз очистилась, но лучше не рисковать, так как я<br><span>Мария, 44 года</span></p>
-				</div>
+			<div class="reviews2">
+				<img src="img/foto-otz-three.png">
+				<p>Несколько лет назад у меня незаметно начали появляться папилломы на веках и вокруг глаз. Скоро это превратилось в проблему, т.к. некоторые из них сильно увеличились и стали заметны. Знаю что не рекомендуется применять рядом с глазами, но я рискнула, очень аккуратно(( Помогло конечно.. После курса лечения кожа вокруг глаз очистилась, но лучше не рисковать, так как я<br><span>Мария, 44 года</span></p>
 			</div>	
 		</div>	
 	</section>
-	<!--сделано________________________________________________ -->
+<!-- сделано!!!!!!!-->
 	<footer id="footer">
 		<div class="content">
-			<h2>начинайте жить без бородавок и папиллом<div class="line-zag">прямо сейчас!</div></h2>
+			<h2>начинайте жить без бородавок и папиллом прямо сейчас!</h2>
 			<div class="footer-booking">
-				<div><img src="img/img-footer.png"></div>
-				<div class="price booking-item2">
+				<div class="booking-item"><img src="img/img-footer.png"></div>
+				<div class="price booking-item">
 					<p>только сегодня уникальное предложение!</p>
 					<div class="sum">
 						<span class="big-sum">399<span class="big-sum-curensy">грн.</span> </span> 
