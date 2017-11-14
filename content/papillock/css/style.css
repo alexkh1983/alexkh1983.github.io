@@ -25,6 +25,10 @@ h2{
 	text-transform: uppercase;
 	font-size: 33px;
 }
+h3{
+	font-size: 23px;
+	font-weight: normal;
+}
 body, html{
 	box-sizing: border-box;
 	font-family: 'PT Sans', sans-serif;
@@ -39,12 +43,6 @@ body, html{
 	width: 85%;
 	margin: 0 auto;
 	min-height: 100%;
-}
-.counter{
-	border: 1px solid #1D5237;
-	border-radius: 32px;
-	margin: 10px auto;
-	width: 180px;
 }
 .button{
 	background: url(../img/btn-header.png);
@@ -81,6 +79,94 @@ body, html{
 	color: #b42112;
 	font-size: 24px;
 }
+/* timer */ 
+#clock-wrapper{
+	color: #1D5237;
+	width: 220px;
+	height: 150px;
+}
+#clock-wrapper h3{
+	text-align: center;
+}
+#clock{
+	display: flex;
+	justify-content: space-between;
+	width: 208px;
+	align-items: center;
+	margin: 0 auto;
+}
+#clock #clock-item p span{
+	text-align: center;
+	font-size: 15px;
+	margin: 0px 0 26px 0;
+	text-transform: lowercase;
+}
+#hour, #min, #sec{
+	border: 1px solid #1D5237;
+	width: 52px;
+	height: 56px;
+	border-radius: 35px;
+	position: relative;
+}
+#hour0, #hour1, #min0, #min1, #sec0, #sec1{
+	font-size: 27px;
+	font-weight: bold;
+}
+#hour01, #hour11, #min01, #min11, #sec01, #sec11{
+	font-size: 27px;
+	font-weight: bold;
+}
+#hour02, #hour12, #min02, #min12, #sec02, #sec12{
+	font-size: 27px;
+	font-weight: bold;
+}
+#hour0, #hour01, #hour02 {
+	position: absolute;
+	top: 10px;
+	left: 11px;
+}
+#hour1, #hour11, #hour12{
+	position: absolute;
+	top: 10px;
+	left: 27px;
+}
+#min0, #min01, #min02{
+	position: absolute;
+	top: 10px;
+	left: 11px;
+}
+#min1, #min11, #min12{
+	position: absolute;
+	top: 10px;
+	left: 27px;
+}
+#sec0, #sec01, #sec02{
+	position: absolute;
+	top: 10px;
+	left: 11px;
+}
+#sec1, #sec11, #sec12{
+	position: absolute;
+	top: 10px;
+	left: 27px;
+}
+#hour p, #min p, #sec p{
+	height: 36px;
+}
+#razd{
+	margin-bottom: 33px;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+#stop {
+	color: white;
+	font-size: 2em;
+	margin: 15px 10px 10px 25px;
+	position: absolute;
+}
+/* timer - end */ 
+
 /* common styles - end */ 
 #header{
 	background: url(../img/bg.png);
@@ -95,7 +181,7 @@ body, html{
 	min-height: 100%;
 	margin-left: 186px;
 }
-#header p{
+#header .slogan p{
 	text-transform: uppercase;
 }
 #header .slogan{
@@ -114,54 +200,47 @@ body, html{
 	display: flex;
 	justify-content: space-between;
 }
-.item1, .item2{
+#header .item1, #header .item2{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
 }
-.item1{
-	align-items: flex-start;
+#header .item1{
+	align-items: center;
 }
-.item2{
+#header .item2{
 	align-items: flex-end;
 }
-.item2 li{
+#header .item2 li{
 	text-align: right;
 }
-.item2 ul li span{
+#header .item2 ul li span{
 	text-transform: uppercase;
 	font-size: 27px;
 	color: #4A5759;
 }
-.item2 ul li{
+#header .item2 ul li{
 	font-size: 23px;
 	color: #242424;
 }
-.item2 ul li img{
+#header .item2 ul li img{
 	margin: 14px 0 -11px 23px;
 	display: inline;
 }
-.item2 .price p{
+#header .item2 .price p{
 	color: #ffffff;
 	background: url(../img/line-sale.png);
 	background-repeat: no-repeat;
 	font-size: 20px;
 	width: 70%;
 }
-.item2 .price{
+#header .item2 .price{
 	margin-top: 30px;
 	width: 92%;
 }
-.item2 .sum{
+#header .item2 .sum{
 	margin: 34px 0 0 130px;
 }
-.item1 p{
-	text-align: center;
-	text-transform: lowercase;
-	font-size: 22px;
-	color: #1D5237;
-	margin: 10px 0 10px 0;
-}
+
 #determ .content{
 	display: flex;
 	justify-content: space-between;	
@@ -331,6 +410,7 @@ body, html{
 }
 #booking{
 	margin-top: 20px;
+	margin-bottom: 40px;
 }
 #booking .content{
 	display: flex;
@@ -354,8 +434,14 @@ body, html{
 #booking .booking-item1, .booking-item2{
 	width: 30%;
 }
-#booking .counter{
+#booking #clock{
 	margin: 15px auto 35px;
+}
+#booking .booking-item3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 #booking .booking-item3>p>span{
 	font-size: 24px;
@@ -429,7 +515,7 @@ body, html{
 	padding-top: 160px;
 }
 #expertop .expertop-content{
-	width: 51%;
+	width: 50%;
 	margin: 89px 0 40px 155px;
 }
 #expertop .expertop-content p{
@@ -510,9 +596,17 @@ body, html{
 	font-weight: bold;
 	margin-bottom: 30px;
 }
-#footer .booking-item .counter{
-	margin-bottom: 30px;
-} 
+
+#footer #clock p span{
+	text-align: center;
+	font-size: 20px;
+	margin: 0 auto;
+	text-transform: lowercase;
+	font-weight: normal;
+}
+#footer #clock #razd {
+    margin-bottom: 67px;
+}
 #footer .strelka{
 	align-self: flex-end;
 }
@@ -652,7 +746,10 @@ body, html{
 		background-position: -100px 0;
 	}
 	#footer .strelka{
-		align-self: flex-start;
+		display: none;
+	}
+	#footer #clock-wrapper, #footer #clock{
+		width: 188px;
 	}
 }
 
@@ -746,9 +843,7 @@ body, html{
 	#header .item2 .sum {
 		margin: 34px 0 25px 7px;
 	}
-	#header .item1 p{
-		font-size: 20px;
-	}
+	
 	#determ{
 		margin-top: -35px;
 	}
@@ -770,7 +865,7 @@ body, html{
 	#booking .booking-item2 img {
 		margin-left: 44px;
 	}
-	#booking .counter{
+	#booking #clock{
 		width: 170px;
 	}
 	#booking .content{
@@ -835,9 +930,7 @@ body, html{
 		width: 90%;
 		height: auto;
 	}
-	#footer .strelka{
-		display: none;
-	}
+	
 	#footer .button{
 		height: 130px;
 		width: 379px;
@@ -848,6 +941,12 @@ body, html{
 	#footer form #submit{
 		top: 10px;
 		right: 84px;
+	}
+	#footer #clock-wrapper{
+		width: 220px;
+	}
+	#footer #clock{
+		width: 208px;
 	}
 }
 
