@@ -161,7 +161,6 @@ article a p{
 /* Footer
 -----------------------------------------------------------------------------*/
 footer {
-	min-height: 510px;
 	background-color: #0F86CA;
 	width: 100%;
 	margin: 0 auto;
@@ -171,7 +170,7 @@ footer {
 }
 .fwrapper{
 	min-width: 480px; max-width: 1900px;
-	margin: 0 auto;
+	margin: 0 auto 30px;
 	width: 90%;
 	padding: 0 18px;
 	height: 100%;
